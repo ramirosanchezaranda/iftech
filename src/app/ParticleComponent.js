@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 'use client';
 
 import { useEffect, useRef } from 'react';
@@ -132,6 +133,7 @@ export default function ParticleComponent() {
 
         for (i = 0; i < NUM_PARTICLES; i++) {
           p = list[i];
+          // eslint-disable-next-line @typescript-eslint/no-unused-expressions
           b[n = (~~p.x + (~~p.y * w)) * 4] = b[n+1] = b[n+2] = COLOR, b[n+3] = 255;
         }
 
